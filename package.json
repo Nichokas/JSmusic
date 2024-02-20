@@ -31,5 +31,9 @@
   "bugs": {
     "url": "https://github.com/Nichokas/music.js/issues"
   },
-  "homepage": "https://github.com/Nichokas/music.js#readme"
+  "homepage": "https://github.com/Nichokas/music.js#readme",
+  "dependencies": {
+    "fluent-ffmpeg": "^2.1.2",
+    "speaker": "^0.5.4"
+  }
 }
