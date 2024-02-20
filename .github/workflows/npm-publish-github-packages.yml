@@ -17,7 +17,6 @@ jobs:
           node-version: 16
       - run: sudo apt-get update
       - run: sudo apt-get install -y build-essential libasound2-dev
-      - run: npm install
       - run: npm ci
 
   publish-gpr:
@@ -32,6 +31,8 @@ jobs:
         with:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
+      - run: sudo apt-get update
+      - run: sudo apt-get install -y build-essential libasound2-dev
       - run: npm ci
       - run: npm publish
         env:
