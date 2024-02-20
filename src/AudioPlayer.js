@@ -1,8 +1,8 @@
 const play = require('./play');
-const stop = require('./stop');
-const pause = require('./pause');
-const resume = require('./resume');
-const getElapsedTime = require('./getElapsedTime');
+//const stop = require('./stop');
+//const pause = require('./pause');
+//const resume = require('./resume');
+//const getElapsedTime = require('./getElapsedTime');
 
 class AudioPlayer {
     constructor(filePath) {
@@ -16,9 +16,9 @@ class AudioPlayer {
 }
 
 AudioPlayer.prototype.play = function() { play(this); };
-AudioPlayer.prototype.stop = function() { stop(this); };
-AudioPlayer.prototype.pause = function() { pause(this); };
-AudioPlayer.prototype.resume = function() { resume(this); };
-AudioPlayer.prototype.getElapsedTime = function() { return getElapsedTime(this); };
+//AudioPlayer.prototype.stop = function() { stop(this); };
+//AudioPlayer.prototype.pause = function() { pause(this); };
+//AudioPlayer.prototype.resume = function() { resume(this); };
+//AudioPlayer.prototype.getElapsedTime = function() { return getElapsedTime(this); };
 
 module.exports = AudioPlayer;
